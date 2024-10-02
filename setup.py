@@ -1,13 +1,12 @@
-
 from setuptools import setup, find_packages
 
 setup(
-    name='organize-files',
-    version='0.1.1',
-    packages=find_packages(),
+    name='organize-files',  # This is the package name as seen on PyPI
+    version='0.1.2',
+    packages=find_packages(),  # This will find the package under the directory
     entry_points={
         'console_scripts': [
-            'file-organizer=file_organizer.organizer:main',
+            'file-organizer=organize_files.organizer:main',  # Adjusted to underscore
         ],
     },
     install_requires=[],
